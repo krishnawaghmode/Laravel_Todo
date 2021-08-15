@@ -18,7 +18,7 @@ class UserResource extends JsonResource
 
               'id'    =>(integer)$this->id,
               'name'  =>(string)$this->name,
-              'email' =>(integer)$this->email,
+              'email' =>(string)$this->email,
               'todos' =>TodoResource::collection($this->whenLoaded('todos')),
 
         ];
